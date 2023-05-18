@@ -21,7 +21,7 @@
   margin-bottom: 10px;
   text-align: center;
 }
-.Grid--item a{
+.Grid--item Link{
     display: inline-block;
     text-decoration: none;
     padding: 10px 20px;

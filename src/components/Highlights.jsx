@@ -1,13 +1,12 @@
-import './Highlights.css'
+import "./Highlights.css";
 
 function Highlights({ Highlightpost }) {
   // Highlightpost.map(blog=>console.log(blog))
   return (
-    <div className='highlights'>
+    <div className="highlights">
       {Highlightpost.map((post, index) => {
-        
         return (
-          <div className='highlights--item' key={index}>
+          <div className="highlights--item" key={index}>
             <p>{post.title}</p>
           </div>
         );

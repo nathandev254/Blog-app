@@ -1,0 +1,25 @@
+.header{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    /* height: 50px; */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.504);
+    text-align: center;
+    color: #000;
+    margin-bottom: 20px;
+  }
+.header--items{
+    display: flex;
+    gap: 30px;
+  }
+.header--items li{
+    list-style: none;
+}
+.header--items li a{
+    text-decoration: none;
+    font-size: 15px;
+    text-transform: uppercase;
+    color: #000;
+}
