@@ -38,7 +38,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home blogPosts={blogPosts} />}></Route>
           <Route
-            path="/readmore"
+            path="/Readmore"
             element={<Readmore content={blogPosts.content} />}
           ></Route>
           <Route path="*" element={<Error />}></Route>
