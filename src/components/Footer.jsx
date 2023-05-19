@@ -1,12 +1,12 @@
 function Footer() {
 
-    // const now = new Date()
+    const now = new Date().toDateString()
 
     return(
-        <>
-            <p>Nathaniel warimwe</p>
-            <p>now</p>
-        </>
+        <div className="Footer">
+            <p>Nathaniel</p>
+            <p>{now}</p>
+        </div>
     );
     
 }
