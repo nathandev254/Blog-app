@@ -18,3 +18,7 @@
   min-height: 100vh;
   /* border: 1px solid red; */
 }
+.Footer{
+  width: 100%;
+  background-color: red;
+}

@@ -1,6 +1,6 @@
 import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Readmore from './pages/Readmore'
+import Readmore from "./pages/Readmore";
 import Error from "./pages/Error";
 import Home from "./components/Home";
 import Header from "./components/header";
@@ -32,17 +32,20 @@ function App() {
   ];
 
   return (
-    <div className="Hero--content">
-      <Header></Header>
-      <BrowserRouter>
+    <BrowserRouter>
+      <div className="Hero--content">
+        <Header></Header>
         <Routes>
           <Route path="/" element={<Home blogPosts={blogPosts} />}></Route>
-          <Route path="/readmore" element={<Readmore/>}></Route>
+          <Route
+            path="/readmore"
+            element={<Readmore content={blogPosts.content} />}
+          ></Route>
           <Route path="*" element={<Error />}></Route>
         </Routes>
-      </BrowserRouter>
-      <Footer />
-    </div>
+        <Footer className="Footer" />
+      </div>
+    </BrowserRouter>
   );
 }
 
